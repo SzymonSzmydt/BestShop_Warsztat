@@ -14,7 +14,8 @@
 </head>
 <body>
 
-    <header>    <!- START HEADER SECTION -->
+    <!- START HEADER SECTION -->
+    <header>
         <nav class="header_navigation container">
         <span class="navigation_logo"><a href="#">BestShop</a></span>
             <ul class="header_nav_ul">
@@ -26,7 +27,8 @@
         </nav>
     </header>   <!- END HEADER SECTION -->
 
-    <section class="opening_section">           <!- START OPENING SECTION -->
+    <!- START OPENING SECTION -->
+    <section class="opening_section">
         <div class="opening_section_content">
             <h1 class="opening_section_header">Sell More</h1>
             <p class="opening_section_text">
@@ -37,7 +39,8 @@
         </div>
     </section>       <!- END OPENING SECTION -->
 
-    <section class="statistics">    <!- START STATISTICS SECTION -->
+    <!- START STATISTICS SECTION -->
+    <section class="statistics">
         <div class="container">
             <div class="stat_top_text">
                 <h2>The most popular sales platform in country</h2>
@@ -69,7 +72,8 @@
         </div>
     </section>      <!- END STATISTICS SECTION -->
 
-    <section class="marketing">     <!- START MARKETING SECTION -->
+    <!- START MARKETING SECTION -->
+    <section class="marketing">
             <div class="marketing_container container">
 
                 <div class="marketing_single marketing_single_notebook">
@@ -118,6 +122,113 @@
                 </div>
             </div>
     </section>     <!- END MARKETING SECTION -->
+
+    <!- START PRICING SECTION -->
+    <section class="pricing container" id="prices">
+        <h2>Pricing</h2>
+        <div class="pricing_boxes">
+
+            <div class="pricing_box pricing_box_basic">
+                <div class="pricing_details">
+                    <div class="pricing_type">Basic</div>
+                    <div class="pricing_price">$0</div>
+                </div>
+                <ul class="pricing_items">
+                    <li class="pricing_item">100 MB HDD</li>
+                    <li class="pricing_item">1 Subdomain</li>
+                    <li class="pricing_item">2 E-mails</li>
+                    <li class="pricing_item pricing_item_not">Two years licence</li>
+                    <li class="pricing_item pricing_item_not">Full support</li>
+                </ul>
+                <a href="#" class="btn">Begin</a>
+            </div>
+            <div class="pricing_box pricing_box_professional">
+                <div class="pricing_details">
+                    <div class="pricing_type">Professional</div>
+                    <div class="pricing_price">$25</div>
+                    <div class="pricing_limited">Limited offer</div>
+                </div>
+                <ul class="pricing_items">
+                    <li class="pricing_item">500 MB HDD</li>
+                    <li class="pricing_item">2 Subdomain</li>
+                    <li class="pricing_item">5 E-mails</li>
+                    <li class="pricing_item">One years licence</li>
+                    <li class="pricing_item pricing_item_not">Full support</li>
+                </ul>
+                <a href="#" class="btn btn--primary">Begin</a>
+            </div>
+
+            <div class="pricing_box pricing_box_premium">
+                <div class="pricing_details">
+                    <div class="pricing_type">Premium</div>
+                    <div class="pricing_price">$60</div>
+                    <div class="pricing_limited">Limited offer</div>
+                </div>
+                <ul class="pricing_items">
+                    <li class="pricing_item">2 GB HDD</li>
+                    <li class="pricing_item">5 Subdomain</li>
+                    <li class="pricing_item">20 E-mails</li>
+                    <li class="pricing_item">Two years licence</li>
+                    <li class="pricing_item">Full support</li>
+                </ul>
+                <a href="#" class="btn">Begin</a>
+            </div>
+
+        </div>
+    </section>       <!- END PRICING SECTION -->
+
+    <!- START CONTACT SECTION -->
+    <section class="contact container" id="contact">
+
+        <div class="contact_section">
+            <h2 class="contact_title">Any questions?</h2>
+            <p class="contact_instruction">
+                Leave your email address or contact us!
+            </p>
+            <div class="contact_details">
+                <a href="mailto:info@bestshop.xyz" class="details_item">
+                    <img src="assets/Mail%20Icon.svg" alt="mail"/>
+                    info@bestshop.xyz
+                </a>
+
+                <a href="tel:123456789" class="details_item">
+                    <img src="assets/Phone%20Icon.svg" alt="phone"/>
+                    123 456 789
+                </a>
+            </div>
+        </div>
+
+        <div class="contact_section">
+            <form class="form">
+                <div class="form_field">
+                    <label class="form_label" for="name">Name</label>
+                    <input type="text" class="form_input name" id="name" />
+                </div>
+
+                <div class="form_field">
+                    <label class="form_label" for="email">E-mail</label>
+                    <input type="email" class="form_input email" id="email" />
+                </div>
+
+                <div class="form_text">
+                    <label class="form_checkbox">
+                        <input type="checkbox"/>
+                        <span class="checkbox"></span>
+                        <span class="text_area">
+                            I hereby give consent for my personal data included in my
+                            application to be processed for the purposes of the recruitment
+                            process under the European Parliament’s and Council of the
+                            European Union Regulation on the Protection of Natural Persons as
+                            of 27 April 2016, with regard to the processing of personal data
+                            and on the free movement of such data, and repealing Directive
+                            95/46/EC (Data Protection Directive)
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary">Send</button>
+            </form>
+        </div>
+    </section>      <!- END CONTACT SECTION -->
 
 </body>
 </html>
