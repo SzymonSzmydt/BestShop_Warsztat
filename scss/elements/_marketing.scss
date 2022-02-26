@@ -15,7 +15,9 @@
   align-items: flex-end;
   margin-bottom: 37px;
   border-radius: 5px;
-}.marketing_text {
+}
+
+.marketing_text {
    max-width: 415px;
    margin: 90px 36px;
  }
@@ -45,75 +47,83 @@
 
 .marketing_single_notebook {
   --accent-color: var(--color-redish);
+
+  & .marketing_image {
+    margin-right: 117px;
+    margin-bottom: 38px;
+  }
+
+  & .marketing_image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: var(--accent-color);
+    border-radius: 40px;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+  }
+
+  & .marketing_image img {
+    width: 386px;
+    height: auto;
+  }
 }
 
-.marketing_single_notebook .marketing_image {
-  margin-right: 117px;
-  margin-bottom: 38px;
-}
 
-.marketing_single_notebook .marketing_image::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  background-color: var(--accent-color);
-  border-radius: 40px;
-  right: 0;
-  top: -40px;
-  transform: rotate(45deg);
-}
-
-.marketing_single_notebook .marketing_image img {
-  width: 386px;
-  height: auto;
-}
 
 .marketing_single_phone {
   --accent-color: var(--color-primary);
   flex-direction: row-reverse;
   padding: 0 20px 0 70px;
+
+  & .marketing_image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    left: 0;
+    top: -20px;
+  }
+
+  & .marketing_image img {
+    width: 426px;
+    height: auto;
+
+    & .marketing_text {
+      margin: 70px 0;
+    }
+  }
+
 }
 
-.marketing_single_phone .marketing_image::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  left: 0;
-  top: -20px;
-}
 
-.marketing_single_phone .marketing_image img {
-  width: 426px;
-  height: auto;
-}
 
-.marketing_single_phone .marketing_text {
-  margin: 70px 0;
-}
 
 .marketing_double {
   --accent-color: var(--color-green);
   display: flex;
-}
 
-.marketing_double > div {
-  margin-bottom: 0;
+  & > div {
+    margin-bottom: 0;
+  }
 }
 
 .marketing_single_solo {
   max-width: 620px;
+
+  & .marketing_text {
+    max-width: none;
+    margin: 70px 35px;
+  }
 }
 
-.marketing_single_solo .marketing_text {
-  max-width: none;
-  margin: 70px 35px;
-}
+
 
 .marketing_single_image {
   flex-grow: 1;

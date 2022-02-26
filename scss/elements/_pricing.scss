@@ -57,20 +57,22 @@
 .pricing_item {
   font-size: 14px;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Checkmark-1.svg");
+  }
+
+  &_not::before {
+    background-image: url("../assets/Close.svg");
+  }
 }
 
-.pricing_item::before {
-  content: "";
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("../assets/Checkmark-1.svg");
-}
 
-.pricing_item_not::before {
-  background-image: url("../assets/Close.svg");
-}
 
 .pricing_box .btn {
   position: relative;
@@ -92,14 +94,14 @@
   width: 400px;
   margin: 0 40px;
   box-shadow: 5px 1px 27px var(--color-primary-shadow);
-}
 
-.pricing_box_professional .pricing_type {
-  font-size: 1.3125rem;
-}
+  & .pricing_type {
+    font-size: 1.3125rem;
+  }
 
-.pricing_box_professional .pricing_item {
-  margin-bottom: 25px;
+  & .pricing_item {
+    margin-bottom: 25px;
+  }
 }
 
 .pricing_box_premium {
