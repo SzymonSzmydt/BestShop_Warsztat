@@ -1,0 +1,27 @@
+{
+  "name": "bestshop",
+  "version": "1.0.0",
+  "description": "RWD SASS",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SzymonSzmydt/BestShop_Warsztat.git"
+  },
+  "keywords": [
+    "bestshop"
+  ],
+  "author": "Szymon Szmydt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SzymonSzmydt/BestShop_Warsztat/issues"
+  },
+  "homepage": "https://github.com/SzymonSzmydt/BestShop_Warsztat#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  }
+}
