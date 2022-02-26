@@ -10,8 +10,8 @@ a {
   width: 1352px;
   margin: 0 auto;
 
-  @media screen and (max-width: $breakingpoint-ld) {
-    width: 100vh;
+  @include laptop {
+    width: 100%;
     padding: 0 15px;
   }
 }

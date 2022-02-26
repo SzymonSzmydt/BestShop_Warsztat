@@ -1,7 +1,9 @@
 @import "generic/reset";
-@import "generic/generall";
-
 @import "settings/variables";
+@import "settings/colors";
+
+@import "generic/mixins";
+@import "generic/general";
 
 @import "elements/header";
 @import "elements/opening";

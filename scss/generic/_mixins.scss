@@ -1,0 +1,6 @@
+@mixin laptop {         // mixin zawarty w container
+  @media screen and (max-width: 1352px) {
+    @content;
+  }
+}
+

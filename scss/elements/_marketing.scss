@@ -1,6 +1,6 @@
 .marketing {
   padding: 100px 0;
-  background-color: var(--color-light-grey);
+  background-color: $color-light-grey;
 }
 
 .marketing_container {
@@ -8,7 +8,7 @@
 }
 
 .marketing_single {
-  background-color: var(--color-white);
+  background-color: $color-white;
   border: 1px solid #E8E9ED;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   content: "";
   width: 332px;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: $color-redish;
   display: block;
   margin-top: 50px;
 }
@@ -46,7 +46,6 @@
 }
 
 .marketing_single_notebook {
-  --accent-color: var(--color-redish);
 
   & .marketing_image {
     margin-right: 117px;
@@ -59,7 +58,7 @@
     position: absolute;
     width: 180px;
     height: 180px;
-    background-color: var(--accent-color);
+    background-color: $color-redish;
     border-radius: 40px;
     right: 0;
     top: -40px;
@@ -72,10 +71,7 @@
   }
 }
 
-
-
 .marketing_single_phone {
-  --accent-color: var(--color-primary);
   flex-direction: row-reverse;
   padding: 0 20px 0 70px;
 
@@ -85,7 +81,7 @@
     position: absolute;
     width: 320px;
     height: 320px;
-    background-color: var(--accent-color);
+    background-color: $color-primary;
     border-radius: 50%;
     left: 0;
     top: -20px;
@@ -102,11 +98,7 @@
 
 }
 
-
-
-
 .marketing_double {
-  --accent-color: var(--color-green);
   display: flex;
 
   & > div {
@@ -123,14 +115,12 @@
   }
 }
 
-
-
 .marketing_single_image {
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-color);
+  background-color: $color-green;
   border: none;
   margin-left: 60px;
 }
