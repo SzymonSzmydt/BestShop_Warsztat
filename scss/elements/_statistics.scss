@@ -1,0 +1,75 @@
+.statistics {
+  margin: 100px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-raleway);
+  color: var(--color-black);
+}
+
+.stats_container {
+  margin: 100px auto 120px;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics_single {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-family: var(--font-raleway);
+  max-width: 160px;
+}
+
+.statistics_circle {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.statistics_single:nth-child(1) .statistics_img {
+  top: 3px;
+}
+
+.statistics_single:nth-child(1) .statistics_circle {
+  background-color: var(--color-redish);
+}
+
+.statistics_single:nth-child(2) .statistics_img {
+  top: 14px;
+}
+
+.statistics_single:nth-child(2) .statistics_circle {
+  background-color: var(--color-primary);
+}
+
+.statistics_single:nth-child(3) .statistics_img {
+  top: 5px;
+}
+
+.statistics_single:nth-child(3) .statistics_circle {
+  background-color: var(--color-green);
+}
+
+.statistics_img {
+  position: absolute;
+}
+
+.statistics_value {
+  padding-top: 15px;
+  font-weight: 800;
+  font-family: var(--font-raleway);
+  font-size: 1.25rem;
+  color: var(--color-black);
+  letter-spacing: 6px;
+}
+
+.statistics_description {
+  color: var(--color-grey);
+  margin-top: 19px;
+}

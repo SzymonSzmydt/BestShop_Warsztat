@@ -1,0 +1,107 @@
+.pricing {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing_boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.pricing_box {
+  width: 370px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--accent-color);
+}
+
+.pricing_details {
+  margin-top: 34px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.pricing_type {
+  font-size: 1.25rem;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+}
+
+.pricing_price {
+  font-size: 2.875rem;
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  margin-top: 25px;
+  color: var(--accent-color);
+}
+
+.pricing_limited {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.75rem;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+}
+
+.pricing_items {
+  text-align: center;
+}
+
+.pricing_item {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.pricing_item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../assets/Checkmark-1.svg");
+}
+
+.pricing_item_not::before {
+  background-image: url("../assets/Close.svg");
+}
+
+.pricing_box .btn {
+  position: relative;
+  bottom: -25px;
+  font-size: 0.8125rem;
+  background-color: var(--accent-color);
+}
+
+.pricing_box_basic {
+  --accent-color: var(--color-redish);
+}
+
+.pricing_box_basic .pricing_price {
+  margin-bottom: 30px;
+}
+
+.pricing_box_professional {
+  --accent-color: var(--color-primary);
+  width: 400px;
+  margin: 0 40px;
+  box-shadow: 5px 1px 27px var(--color-primary-shadow);
+}
+
+.pricing_box_professional .pricing_type {
+  font-size: 1.3125rem;
+}
+
+.pricing_box_professional .pricing_item {
+  margin-bottom: 25px;
+}
+
+.pricing_box_premium {
+  --accent-color: var(--color-green);
+}
