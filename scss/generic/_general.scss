@@ -7,11 +7,18 @@ a {
 }
 
 .container {
-  width: 1352px;
-  margin: 0 auto;
+    width: 1352px;
+    margin: 0 auto;
 
   @include laptop {
-    width: 100%;
+    width: 100vw;
+    margin: 0 auto;
     padding: 0 15px;
+  }
+
+  @include mobile {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
   }
 }

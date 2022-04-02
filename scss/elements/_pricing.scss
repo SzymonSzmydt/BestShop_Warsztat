@@ -4,6 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & h2 {
+    font-weight: bold;
+  }
+
+  @include mobile {
+    margin-top: 3rem;
+  }
 }
 
 .pricing_boxes {
@@ -11,6 +19,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+
+  @include mobile {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 .pricing_box {
@@ -20,12 +33,21 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid $color-redish;
+
+  @include mobile {
+    width: 270px;
+    margin: 3rem 0;
+  }
 }
 
 .pricing_details {
   margin-top: 34px;
   margin-bottom: 60px;
   text-align: center;
+
+  @include mobile {
+    margin: 20px;
+  }
 }
 
 .pricing_type {
@@ -92,6 +114,10 @@
   width: 400px;
   margin: 0 40px;
   box-shadow: 5px 1px 27px $color-primary-shadow;
+
+  @include mobile {
+    width: 300px;
+  }
 
   & .pricing_type {
     font-size: 1.3125rem;

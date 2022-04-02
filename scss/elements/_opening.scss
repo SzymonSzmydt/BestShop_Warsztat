@@ -43,3 +43,22 @@
   width: 100%;
   height: auto;
 }
+
+@include mobile {
+
+  .opening_section_header {
+    font-size: 2.25rem;
+  }
+
+  .opening_section_text {
+    margin: 2rem 1rem;
+  }
+
+  .btn {
+    display: block;
+    font-family: $font-open-sans;
+    font-size: 1rem;
+
+    padding: 16px 65px;
+  }
+}

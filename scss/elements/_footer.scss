@@ -24,4 +24,8 @@
 
 .footer_icons a:first-of-type {
   margin-right: 25px;
+
+  @include mobile {
+    margin-right: 15px;
+  }
 }
