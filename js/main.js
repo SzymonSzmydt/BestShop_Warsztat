@@ -1,13 +1,17 @@
 const form = {
     products: document.querySelector("#products"),
     orders: document.querySelector("#orders"),
-    package: document.querySelector(".select__input")
+    package: document.querySelector(".select__input"),
+    accounting: document.querySelector("#accounting"),
+    terminal: document.querySelector("#terminal")
 }
 
 const summary = {
     products: document.querySelector("[data-id='products']"),
     orders: document.querySelector("[data-id='orders']"),
     package: document.querySelector("[data-id='package']"),
+    accounting: document.querySelector("[data-id='accounting']"),
+    terminal: document.querySelector("[data-id='terminal']"),
     total: document.querySelector("#total-price")
 }
 
@@ -74,6 +78,34 @@ function renderPackages() {     // selected menu dropdown
     dropPackage.children[2].addEventListener("click", show);
 }
 
+function renderAccounting() {
+    if (this.checked === true) {
+        summary.accounting.style.display = "flex";
+        summary.accounting.children[0].innerHTML = "Accounting";
+        summary.accounting.children[1].innerHTML = `$${prices.accounting}`;
+        totalSum[3] = prices.accounting;
+    }
+    else {
+        summary.accounting.style.display = "none";
+        totalSum[3] = 0;
+    }
+    total();
+}
+
+function renderTerminal() {
+    if (this.checked === true) {
+        summary.terminal.style.display = "flex";
+        summary.terminal.children[0].innerHTML = "Terminal";
+        summary.terminal.children[1].innerHTML = `$${prices.terminal}`;
+        totalSum[4] = prices.terminal;
+    }
+    else {
+        summary.accounting.style.display = "none";
+        totalSum[4] = 0;
+    }
+    total();
+}
+
 function total() {      //      summary all prices from totalSum array
     let result = totalSum.reduce((a, b) => a + b);
     if (result > 0) {
@@ -86,4 +118,5 @@ function total() {      //      summary all prices from totalSum array
 form.products.addEventListener("keyup", renderProduct);     // all input -> start
 form.orders.addEventListener("keyup", renderOrders);
 form.package.addEventListener("click", renderPackages);
-form.accounting.addEventListener("check", renderCheckbox);      // stop / input
+form.accounting.addEventListener("change", renderAccounting);
+form.terminal.addEventListener("change", renderTerminal);      // stop / input
