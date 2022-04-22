@@ -12,13 +12,13 @@ a {
 
   @include laptop {
     width: 100vw;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 15px;
   }
 
   @include mobile {
     width: 100vw;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
   }
 }

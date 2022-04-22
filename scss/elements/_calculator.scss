@@ -132,7 +132,7 @@
 
       font-family: $font-open-sans;
       font-size: 12px;
-      color: $color-checckboxText;
+      color: $color-checkboxText;
     }
   }
 
@@ -156,7 +156,8 @@
       align-items: center;
       color: $color-white;
       font-size: 0.875rem;
-      display: none;
+      display: none
+    ;
 
       &.open {
         display: flex;
